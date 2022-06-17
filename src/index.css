@@ -1,13 +1,86 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-image: url('https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-22/ultimate-team/fut-heroes/common/f22-fut-heroes-page-background.jpg.adapt.320w.jpg');
+
+}
+
+.App {
+  display: flex;  
+}
+
+.SectionForm {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20rem;
+}
+
+.FormSection {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.BtnForm {
+  width: 30%;
+  height: 30px;
+  border-radius: 9px;
+}
+
+.PostList {
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 1080px;
+  margin: 8rem 0 0 0;
+  overflow-y: scroll;
+}
+
+.ArticleList {
+  margin-top: 1.2rem;
+}
+
+.PostComment {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 14px;
+  margin: 0.2em 0;
+  width: 300px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+}
+
+.Author {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0.2em 0;
+}
+
+.ArticleList > h3 {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.4;
+font-size: 1.5rem;
+}
+
+.reactionButton {
+  margin: 0 0.25em 0 0;
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
 }
